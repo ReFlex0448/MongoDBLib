@@ -17,12 +17,17 @@ Through this plugin it can be used MongoDB in Nukkit.
 ## Usage(Developer)
 - Please send us a lot of pull request :p
 - You might be check 'MongoDBLib' is exist server before the using the plugin code.
-- e.g. if (this.getServer().getPluginManager().getPlugin("MongoDBLib") == null) return false;
+```
+if (this.getServer().getPluginManager().getPlugin("MongoDBLib") == null) return false;
+```
 - And if you want to get MongoDBClient, you must use this plugin method,
-- e.g. MongoDBLib.getClient(); //- there will be returned MongoClient
+```
+MongoDBLib.getClient(); //- there will be returned MongoClient
+```
 - If you want some make a direct connect with other mongodb server, you can try this method
-- e.g. MongoDBLib.getClient(String url,String id,String pw,String dbName, int serverSelectionTimeout);
-
+```
+MongoDBLib.getClient(String url,String id,String pw,String dbName, int serverSelectionTimeout);
+```
 ## Build
 - This project is maven project.
 - If you have some maven build system, so you can build plugin to jar.
