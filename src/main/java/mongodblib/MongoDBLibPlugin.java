@@ -13,7 +13,7 @@ public class MongoDBLibPlugin extends PluginBase {
 	private MongoDBLibConfig libConfig;
 
 	@Override
-	public void onEnable() {
+	public void onLoad() {
 		plugin = this;
 
 		this.libConfig = new MongoDBLibConfig(this);

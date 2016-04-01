@@ -1,8 +1,8 @@
 name: MongoDBLib
 main: mongodblib.MongoDBLibPlugin
-version: "1.0.0"
+version: "1.0.1"
 author: hmhmmhm
 api: ["1.0.0"]
 
 description: MongoDB library for Nukkit plugins
-website: https://github.com/HmHmmHm
+website: https://github.com/Organization
