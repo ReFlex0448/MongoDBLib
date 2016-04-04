@@ -20,6 +20,14 @@ Through this plugin it can be used MongoDB in Nukkit.
 ```
 if (this.getServer().getPluginManager().getPlugin("MongoDBLib") == null) return false;
 ```
+- If you want to get the default database you can use this plugin method.
+```
+MongoDBLib.getDatabase()
+```
+- If you want to get the other database you can use this plugin method.
+```
+MongoDBLib.getDatabase(String dbName)
+```
 - And if you want to get MongoDBClient, you must use this plugin method,
 ```
 MongoDBLib.getClient(); //- there will be returned MongoClient
@@ -28,6 +36,33 @@ MongoDBLib.getClient(); //- there will be returned MongoClient
 ```
 MongoDBLib.getClient(String url,String id,String pw,String dbName, int serverSelectionTimeout);
 ```
+
+## Maven Dependency Connect(Developer)
+- This project is maven project.
+- If you want use this project In another Maven project, you can use to the put a following information in the pom.xml, then MongoDBLib is automatically applied.
+```
+<repositories>
+ <repository>
+  <id>organization</id>
+  <url>https://github.com/organization/maven-repo/raw/master/</url>
+ </repository>
+</repositories>
+<dependencies>
+ <dependency>
+	<groupId>org.mongodb</groupId>
+	<artifactId>mongo-java-driver</artifactId>
+	<version>3.2.2</version>
+	<scope>provided</scope>
+ </dependency>
+ <dependency>
+	<groupId>mongodblib</groupId>
+	<artifactId>MongoDBLib</artifactId>
+	<version>1.0.2-SNAPSHOT</version>
+	<scope>provided</scope>
+ </dependency>
+</dependencies>
+```
+
 ## Build
 - This project is maven project.
 - If you have some maven build system, so you can build plugin to jar.
