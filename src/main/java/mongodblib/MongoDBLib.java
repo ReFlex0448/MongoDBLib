@@ -6,6 +6,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoCredential;
 import com.mongodb.ServerAddress;
+import com.mongodb.client.MongoDatabase;
 
 public class MongoDBLib {
 	public static MongoClient getClient() {
@@ -26,5 +27,13 @@ public class MongoDBLib {
 			e.printStackTrace();
 		}
 		return client;
+	}
+
+	public static MongoDatabase getDatabase() {
+		return MongoDBLib.getClient().getDatabase(MongoDBLibPlugin.getPlugin().getDBLibConfig().dbName);
+	}
+
+	public static MongoDatabase getDatabase(String dbName) {
+		return MongoDBLib.getClient().getDatabase(dbName);
 	}
 }
