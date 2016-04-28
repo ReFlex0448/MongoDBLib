@@ -9,22 +9,9 @@ MongoDBLib 은 Nukkit 용 플러그인입니다.
 
 ## 사용법(일반 사용자)
 - MongoDB 서버를 필요로 합니다. (반드시 sha1 증명서를 이용해야합니다.)
-- 앞서 말하자면 플러그인 설정을 하기 전에 서버를 한번 실행해야합니다.
-- 출시 페이지에서 jar 파일을 다운받아주세요. (https://github.com/organization/MongoDBLib/releases)
-- 그리고 누킷 플러그인 폴더에 넣은 후 서버를 동작시키고 종료해주세요.
-- 그러면 plugins\MongoDBLib\config.yml 이 생성됩니다. 그 파일을 수정하셔야 합니다.
-- config.yml 내에 반드시 입력해야하는 정보
+- 아래 명령어를 입력해서 기본 서버주소와 계정정보를 입력합니다.
 ```
-#만약 DB서버 IP가 localhost고 포트가 27017이고 기본 DB명이 mydb 고, ID가 myid 고, 비밀번호가 mypw 일때,
-mongodblib:
-  settings:
-    use-logger: false
-    server-selection-timeout: 1000
-  defaultserver:
-    url: localhost:999
-    id: mydb
-    pw: 'myid'
-    db-name: mydb
+/mongo <url> <id> <pw> <dbname> <timeout>
 ```
 
 ## 사용법(개발자)
