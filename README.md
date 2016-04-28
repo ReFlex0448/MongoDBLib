@@ -9,22 +9,9 @@ Through this plugin it can be used MongoDB in Nukkit.
 
 ## Usage(Normal User)
 - MongoDBLib is need to MongoDB Server (it must be using sha1 credential)
-- First of all you need to run server before the set-up this plug-in.
-- Go to the release page and download jar file. (https://github.com/organization/MongoDBLib/releases)
-- And put into the nukkit plugins folder run the server and close it.
-- Then plugins\MongoDBLib\config.yml is created, you need to edit this file.
-- Information that must be entered in the config.yml
+- Enter the following command to enter the default server address and account information.
 ```
-#IF DB SERVER IP IS 'localhost' AND PORT IS '27017' AND DEFAULT DB NAME IS 'mydb' AND ID IS 'myid' AND PASSWORD IS 'mypw'.
-mongodblib:
-  settings:
-    use-logger: false
-    server-selection-timeout: 1000
-  defaultserver:
-    url: localhost:999
-    id: mydb
-    pw: 'myid'
-    db-name: mydb
+/mongo <url> <id> <pw> <dbname> <timeout>
 ```
 
 ## Usage(Developer)
