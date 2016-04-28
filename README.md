@@ -57,7 +57,7 @@ MongoDBLib.getClient(String url,String id,String pw,String dbName, int serverSel
  <dependency>
 	<groupId>mongodblib</groupId>
 	<artifactId>MongoDBLib</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<scope>provided</scope>
  </dependency>
 </dependencies>
