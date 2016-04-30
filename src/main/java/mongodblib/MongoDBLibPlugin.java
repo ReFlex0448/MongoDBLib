@@ -150,7 +150,6 @@ public class MongoDBLibPlugin extends PluginBase {
 				pw = plugin.getDBLibConfig().pw;
 				dbName = plugin.getDBLibConfig().dbName;
 				timeout = plugin.getDBLibConfig().serverSelectionTimeout;
-				System.out.println(url + " " + id + " " + pw + " " + dbName + " " + timeout);
 
 				Server.getInstance().getScheduler().scheduleAsyncTask(new AsyncTask() {
 					public String url, id, pw, dbName;
